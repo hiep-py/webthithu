@@ -1,0 +1,171 @@
+@Quiz {
+    subject: toan
+    grade: 8
+    code: toan8_de004
+    title: Đề thi Giữa học kì 2 Toán 8 - Chân Trời Sáng Tạo (Đề 4)
+    time: 45
+    description: Đề thi trắc nghiệm kiểm tra kiến thức về hàm số, đồ thị và bài toán thực tế.
+}
+
+Q1 {
+    Đồ thị của hàm số bậc nhất y = ax + b là:
+    *A. Đường thẳng
+    B. Đường parabol
+    C. Đường tròn
+    D. Đường cong
+}
+
+Q2 {
+    Cho bảng giá trị: \n
+    x | 0 | 1 | 2 \n
+    y | -2 | 0 | 2 \n
+    Công thức hàm số là gì?
+    *A. y = 2x - 2
+    B. y = x - 2
+    C. y = -2x + 2
+    D. y = 2x
+}
+
+Q3 {
+    Tập xác định của hàm số y = 3x - 5 là:
+    *A. Tất cả x
+    B. x ≥ 5
+    C. x ≠ 0
+    D. x ≤ 3
+}
+
+Q4 {
+    Điểm (3, 7) thuộc đồ thị của hàm số nào?
+    *A. y = 2x + 1
+    B. y = 3x - 2
+    C. y = x + 4
+    D. y = 4x - 5
+}
+
+Q5 {
+    Giá trị của y khi x = -1 trong hàm số y = -2x + 3 là:
+    A. 1
+    *B. 5
+    C. 3
+    D. -1
+}
+
+Q6 {
+    Đồ thị của hàm số y = x + 4 cắt trục y tại điểm nào?
+    A. (4, 0)
+    *B. (0, 4)
+    C. (0, -4)
+    D. (-4, 0)
+}
+
+Q7 {
+    Hàm số y = 2x² - 1 có phải là hàm số bậc nhất không?
+    A. Có
+    *B. Không
+    C. Có điều kiện
+    D. Không xác định
+}
+
+Q8 {
+    Hệ số góc của đường thẳng y = -x + 6 là:
+    A. 6
+    *B. -1
+    C. 1
+    D. 0
+}
+
+Q9 {
+    Tìm x sao cho y = 0 với hàm số y = 3x - 9.
+    A. x = 0
+    B. x = 9
+    *C. x = 3
+    D. x = -3
+}
+
+Q10 {
+    Hệ số góc của đường thẳng qua A(2, 3) và B(4, 7) là:
+    *A. 2
+    B. 1
+    C. 3
+    D. 4
+}
+
+Q11 {
+    Hai đường thẳng y = -2x + 1 và y = 2x - 3 có quan hệ gì?
+    *A. Vuông góc
+    B. Song song
+    C. Cắt nhau
+    D. Trùng nhau
+}
+
+Q12 {
+    Nghiệm của phương trình -4x + 12 = 0 là:
+    *A. x = 3
+    B. x = -3
+    C. x = 4
+    D. x = 12
+}
+
+Q13 {
+    Phương trình 5x - 2 = 3x + 4 có nghiệm là:
+    *A. x = 3
+    B. x = 2
+    C. x = 1
+    D. x = 4
+}
+
+Q14 {
+    Phương trình 2x + 1 = 2x + 1 có bao nhiêu nghiệm?
+    A. Vô nghiệm
+    B. 1 nghiệm
+    *C. Vô số nghiệm
+    D. 2 nghiệm
+}
+
+Q15 {
+    Tìm m để phương trình x + m = 4 có nghiệm x = -2.
+    *A. m = 6
+    B. m = 2
+    C. m = -2
+    D. m = 4
+}
+
+Q16 {
+    Một xe đi quãng đường 150km mất 3 giờ. Vận tốc của xe là bao nhiêu?
+    *A. 50 km/h
+    B. 45 km/h
+    C. 60 km/h
+    D. 75 km/h
+}
+
+Q17 {
+    Một người làm xong công việc trong 10 giờ. Nếu có thêm người thứ hai, họ làm xong trong 6 giờ. Người thứ hai làm một mình mất bao lâu?
+    *A. 15 giờ
+    B. 12 giờ
+    C. 10 giờ
+    D. 8 giờ
+}
+
+Q18 {
+    Một cửa hàng giảm giá 15% cho sản phẩm giá 400.000 đồng. Giá sau giảm là bao nhiêu?
+    *A. 340.000 đồng
+    B. 350.000 đồng
+    C. 360.000 đồng
+    D. 370.000 đồng
+}
+
+Q19 {
+    Tuổi anh hiện gấp 2 lần tuổi em. Sau 5 năm, tuổi anh gấp 1.5 lần tuổi em. Tuổi anh hiện nay là bao nhiêu?
+    *A. 20
+    B. 15
+    C. 25
+    D. 30
+}
+
+Q20 {
+    Một người mua 4kg đường giá 25.000 đồng/kg. Tổng tiền phải trả là bao nhiêu?
+    *A. 100.000 đồng
+    B. 90.000 đồng
+    C. 110.000 đồng
+    D. 120.000 đồng
+}

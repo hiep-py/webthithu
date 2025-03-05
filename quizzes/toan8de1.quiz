@@ -1,0 +1,169 @@
+@Quiz {
+    subject: toan
+    grade: 8
+    code: toan8_de001
+    title: Đề thi Giữa học kì 2 Toán 8 - Chân Trời Sáng Tạo(Đề 1)
+    time: 45
+    description: Đề thi trắc nghiệm ôn tập các chủ đề về hàm số, đồ thị, hàm số bậc nhất, hệ số góc, và giải phương trình bậc nhất.
+}
+
+Q1 {
+    Hàm số là gì?
+    A. Một quy tắc gán mỗi giá trị của x cho nhiều giá trị của y.
+    *B. Một quy tắc gán mỗi giá trị của x cho đúng một giá trị của y.
+    C. Một tập hợp các điểm trên mặt phẳng.
+    D. Một đường thẳng trên đồ thị.
+}
+
+Q2 {
+    Cho bảng giá trị sau: \n x | 1 | 2 | 3 | 4 \n y | 2 | 4 | 6 | 8 \n 
+    Bảng này có biểu diễn một hàm số không?
+    *A. Có, vì mỗi x có đúng một y.
+    B. Không, vì y tăng theo x.
+    C. Có, vì y = 2x.
+    D. Không, vì không có công thức.
+}
+
+Q3 {
+    Tập xác định của hàm số y = √(x - 1) là:
+    A. x > 1
+    *B. x ≥ 1
+    C. x < 1
+    D. Tất cả x
+}
+
+Q4 {
+    Điểm nào sau đây thuộc đồ thị của hàm số y = 3x - 2?
+    A. (1, 2)
+    *B. (2, 4)
+    C. (3, 5)
+    D. (0, -2)
+}
+
+Q5 {
+    Cho đồ thị của hàm số y = x + 1. Khi x = 2, y bằng bao nhiêu?
+    A. 1
+    B. 2
+    *C. 3
+    D. 4
+}
+
+Q6 {
+    Đồ thị của hàm số y = -2x + 3 là một đường thẳng. Đường thẳng này cắt trục y tại điểm nào?
+    A. (0, -2)
+    B. (0, 2)
+    *C. (0, 3)
+    D. (3, 0)
+}
+
+Q7 {
+    Hàm số nào sau đây là hàm số bậc nhất?
+    A. y = x² + 1
+    *B. y = 4x - 3
+    C. y = 2
+    D. y = √x
+}
+
+Q8 {
+    Cho hàm số y = 5x + 2. Hệ số a và b lần lượt là:
+    A. a = 2, b = 5
+    *B. a = 5, b = 2
+    C. a = 5, b = 0
+    D. a = 0, b = 2
+}
+
+Q9 {
+    Tính giá trị của hàm số y = -3x + 4 tại x = 1.
+    A. 7
+    *B. 1
+    C. 4
+    D. -3
+}
+
+Q10 {
+    Hệ số góc của đường thẳng y = mx + b là gì?
+    A. b
+    *B. m
+    C. x
+    D. y
+}
+
+Q11 {
+    Tính hệ số góc của đường thẳng đi qua hai điểm A(1, 2) và B(3, 6).
+    A. 1
+    *B. 2
+    C. 3
+    D. 4
+}
+
+Q12 {
+    Đường thẳng y = 2x + 1 và y = 2x - 3 có hệ số góc như thế nào?
+    A. Khác nhau
+    *B. Bằng nhau
+    C. Ngược nhau
+    D. Không xác định
+}
+
+Q13 {
+    Giải phương trình 4x - 8 = 0.
+    A. x = 0
+    *B. x = 2
+    C. x = 4
+    D. x = 8
+}
+
+Q14 {
+    Phương trình 3x + 5 = 3x - 1 có bao nhiêu nghiệm?
+    A. 0
+    B. 1
+    *C. Vô số
+    D. 2
+}
+
+Q15 {
+    Tìm giá trị của m để phương trình 2x + m = 5 có nghiệm x = 3.
+    A. m = 1
+    *B. m = -1
+    C. m = 5
+    D. m = 11
+}
+
+Q16 {
+    Một người hiện nay hơn con 20 tuổi. Sau 5 năm nữa, tuổi người đó gấp đôi tuổi con. Tính tuổi hiện nay của người đó.
+    A. 25
+    *B. 30
+    C. 35
+    D. 40
+}
+
+Q17 {
+    Một công việc nếu A làm một mình thì xong trong 6 giờ, B làm một mình thì xong trong 4 giờ. Nếu cả hai làm chung thì xong trong bao lâu?
+    A. 2 giờ
+    *B. 2.4 giờ
+    C. 3 giờ
+    D. 5 giờ
+}
+
+Q18 {
+    Một ô tô đi từ A đến B với vận tốc 60 km/h, sau đó quay về với vận tốc 40 km/h. Tính vận tốc trung bình của toàn bộ hành trình.
+    A. 45 km/h
+    *B. 48 km/h
+    C. 50 km/h
+    D. 52 km/h
+}
+
+Q19 {
+    Một lớp học có tỷ lệ nam nữ là 3:2. Nếu có 15 nữ, số nam là bao nhiêu?
+    A. 10
+    *B. 22.5
+    C. 25
+    D. 30
+}
+
+Q20 {
+    Một cửa hàng giảm giá 20% cho tất cả sản phẩm. Nếu giá gốc của một sản phẩm là 500.000 đồng, giá sau khi giảm là bao nhiêu?
+    A. 350.000 đồng
+    *B. 400.000 đồng
+    C. 450.000 đồng
+    D. 480.000 đồng
+}

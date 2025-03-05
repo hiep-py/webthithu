@@ -29,43 +29,30 @@ function searchExams() {
     .value.toLowerCase()
     .trim();
   const searchResults = document.getElementById("searchResults");
+  const grade = document.getElementById("grade").value;
 
-  // Xóa kết quả cũ
-  searchResults.innerHTML = "";
-
-  if (searchText === "") {
+  if (searchText.length < 2) {
     searchResults.style.display = "none";
     return;
   }
 
-  let found = false;
-  let resultsHtml = "";
+  let results = [];
 
-  // Tìm kiếm trong tất cả các môn
+  // Tìm kiếm trong tất cả đề thi
   Object.entries(quizData).forEach(([subject, subjectData]) => {
     Object.entries(subjectData).forEach(([code, exam]) => {
-      if (matchesSearch(code, exam, searchText)) {
-        found = true;
-        resultsHtml += `
-                    <div class="search-result-item" onclick="selectExam('${subject}', '${code}')">
-                        <div class="exam-title">${exam.title}</div>
-                        <div class="exam-subject">Môn: ${getSubjectName(
-                          subject
-                        )} | Mã đề: ${code}</div>
-                    </div>
-                `;
+      if (matchesSearch(exam, code, searchText, grade)) {
+        results.push({
+          subject,
+          code,
+          exam,
+        });
       }
     });
   });
 
-  if (found) {
-    searchResults.innerHTML = resultsHtml;
-  } else {
-    searchResults.innerHTML =
-      '<div class="no-results">Không tìm thấy kết quả</div>';
-  }
-
-  searchResults.style.display = "block";
+  // Hiển thị kết quả
+  displaySearchResults(results);
 }
 
 function getSubjectName(subject) {
@@ -104,11 +91,16 @@ document.addEventListener("click", function (event) {
 });
 
 // Hàm kiểm tra điều kiện tìm kiếm
-function matchesSearch(code, exam, searchText) {
+function matchesSearch(exam, code, searchText, selectedGrade) {
+  // Nếu đã chọn lớp, chỉ tìm trong lớp đó
+  if (selectedGrade && exam.grade !== parseInt(selectedGrade)) {
+    return false;
+  }
+
   return (
-    code.toLowerCase().includes(searchText) ||
     exam.title.toLowerCase().includes(searchText) ||
-    exam.questions.some((q) => q.question.toLowerCase().includes(searchText))
+    code.toLowerCase().includes(searchText) ||
+    exam.description?.toLowerCase().includes(searchText)
   );
 }
 
@@ -143,25 +135,35 @@ function updateExamInfo() {
 }
 
 function startExam() {
+  const grade = document.getElementById("grade").value;
   const subject = document.getElementById("subject").value;
   const examCode = document.getElementById("examCode").value;
 
-  if (!subject || !examCode) {
-    alert("Vui lòng chọn môn thi và mã đề!");
+  if (!grade) {
+    alert("Vui lòng chọn lớp!");
+    return;
+  }
+  if (!subject) {
+    alert("Vui lòng chọn môn học!");
+    return;
+  }
+  if (!examCode) {
+    alert("Vui lòng chọn đề thi!");
     return;
   }
 
-  // Lưu thông tin đề thi vào localStorage
-  const examData = {
-    subject: subject,
-    examCode: examCode,
-    startTime: new Date().getTime(),
-    examInfo: quizData[subject][examCode],
-  };
+  // Lưu thông tin và chuyển trang
+  localStorage.setItem(
+    "currentExam",
+    JSON.stringify({
+      grade: grade,
+      subject: subject,
+      examCode: examCode,
+      startTime: new Date().getTime(),
+      examInfo: quizData[subject][examCode],
+    })
+  );
 
-  localStorage.setItem("currentExam", JSON.stringify(examData));
-
-  // Chuyển đến trang làm bài
   window.location.href = "pages/quiz.html";
 }
 
@@ -177,3 +179,69 @@ document.addEventListener("DOMContentLoaded", function () {
   examCodeSelect.disabled = true;
   document.getElementById("startBtn").disabled = true;
 });
+
+function loadSubjects() {
+  const grade = document.getElementById("grade").value;
+  const subjectSelect = document.getElementById("subject");
+  const examCodeSelect = document.getElementById("examCode");
+  const startBtn = document.getElementById("startBtn");
+
+  subjectSelect.innerHTML = '<option value="">-- Chọn môn học --</option>';
+  examCodeSelect.innerHTML = '<option value="">-- Chọn đề thi --</option>';
+
+  if (!grade) {
+    subjectSelect.disabled = true;
+    examCodeSelect.disabled = true;
+    startBtn.disabled = true;
+    return;
+  }
+
+  // Thêm các môn học
+  const subjects = {
+    toan: "Toán học",
+    ly: "Vật lý",
+    hoa: "Hóa học",
+    sinh: "Sinh học",
+    van: "Ngữ văn",
+    anh: "Tiếng Anh",
+  };
+
+  Object.entries(subjects).forEach(([value, text]) => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = text;
+    subjectSelect.appendChild(option);
+  });
+
+  subjectSelect.disabled = false;
+  examCodeSelect.disabled = true;
+  startBtn.disabled = true;
+}
+
+function displaySearchResults(results) {
+  const searchResults = document.getElementById("searchResults");
+
+  if (results.length === 0) {
+    searchResults.innerHTML =
+      '<div class="search-result-item">Không tìm thấy đề thi phù hợp</div>';
+  } else {
+    searchResults.innerHTML = results
+      .map(
+        (result) => `
+          <div class="search-result-item" onclick="selectExam('${
+            result.subject
+          }', '${result.code}')">
+              <div class="exam-title">${result.exam.title}</div>
+              <div class="exam-info">
+                  <span>Lớp ${result.exam.grade}</span> |
+                  <span>${getSubjectName(result.subject)}</span> |
+                  <span>${result.exam.time} phút</span>
+              </div>
+          </div>
+      `
+      )
+      .join("");
+  }
+
+  searchResults.style.display = "block";
+}

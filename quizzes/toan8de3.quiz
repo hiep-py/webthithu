@@ -1,0 +1,171 @@
+@Quiz {
+    subject: toan
+    grade: 8
+    code: toan8_de003
+    title: Đề thi Giữa học kì 2 Toán 8 - Chân Trời Sáng Tạo (Đề 3)
+    time: 45
+    description: Đề thi trắc nghiệm kiểm tra kiến thức về hàm số, đồ thị và bài toán phương trình thực tế.
+}
+
+Q1 {
+    Hàm số y = -3x + 2 có đồ thị là:
+    *A. Đường thẳng
+    B. Đường cong
+    C. Đường tròn
+    D. Đường parabol
+}
+
+Q2 {
+    Cho bảng giá trị: \n
+    x | -1 | 0 | 1 \n
+    y | 5 | 3 | 1 \n
+    Công thức hàm số là gì?
+    *A. y = -2x + 3
+    B. y = 2x + 3
+    C. y = -3x + 2
+    D. y = x + 3
+}
+
+Q3 {
+    Tập xác định của hàm số y = x² + 1 là:
+    *A. Tất cả x
+    B. x ≥ 0
+    C. x ≠ 0
+    D. x ≤ 1
+}
+
+Q4 {
+    Điểm (1, 4) thuộc đồ thị của hàm số nào?
+    *A. y = 3x + 1
+    B. y = 2x + 1
+    C. y = 4x
+    D. y = x + 3
+}
+
+Q5 {
+    Giá trị của y khi x = 3 trong hàm số y = 2x - 1 là:
+    A. 4
+    *B. 5
+    C. 6
+    D. 7
+}
+
+Q6 {
+    Đồ thị của hàm số y = 4 cắt trục x tại điểm nào?
+    A. (4, 0)
+    B. (0, 4)
+    *C. Không cắt
+    D. (0, 0)
+}
+
+Q7 {
+    Hàm số y = 0x + 5 có đồ thị là:
+    A. Đường thẳng dốc lên
+    B. Đường thẳng dốc xuống
+    *C. Đường thẳng song song trục hoành
+    D. Đường thẳng qua gốc
+}
+
+Q8 {
+    Hệ số góc của đường thẳng y = 1/2x - 3 là:
+    *A. 1/2
+    B. -3
+    C. 2
+    D. 1
+}
+
+Q9 {
+    Tìm x sao cho y = 0 với hàm số y = -x + 5.
+    A. x = 0
+    B. x = -5
+    *C. x = 5
+    D. x = 1
+}
+
+Q10 {
+    Hệ số góc của đường thẳng qua A(-1, 2) và B(1, 6) là:
+    *A. 2
+    B. 1
+    C. 4
+    D. -2
+}
+
+Q11 {
+    Hai đường thẳng y = x + 2 và y = x - 1 có quan hệ gì?
+    *A. Song song
+    B. Cắt nhau
+    C. Vuông góc
+    D. Trùng nhau
+}
+
+Q12 {
+    Nghiệm của phương trình 3x + 6 = 0 là:
+    A. x = 3
+    *B. x = -2
+    C. x = 2
+    D. x = 6
+}
+
+Q13 {
+    Phương trình -2x + 8 = 2x có nghiệm là:
+    A. x = 0
+    *B. x = 2
+    C. x = 4
+    D. x = 8
+}
+
+Q14 {
+    Phương trình x - 5 = x + 2 có bao nhiêu nghiệm?
+    *A. Vô nghiệm
+    B. 1 nghiệm
+    C. Vô số nghiệm
+    D. 2 nghiệm
+}
+
+Q15 {
+    Tìm m để phương trình mx - 4 = 0 có nghiệm x = 2.
+    *A. m = 2
+    B. m = 4
+    C. m = -2
+    D. m = 8
+}
+
+Q16 {
+    Một người đi quãng đường 120km với vận tốc 40km/h. Thời gian đi là bao lâu?
+    A. 2 giờ
+    *B. 3 giờ
+    C. 4 giờ
+    D. 5 giờ
+}
+
+Q17 {
+    Một bể nước được bơm đầy trong 6 giờ nếu dùng một vòi. Nếu dùng hai vòi, mất bao lâu?
+    *A. 3 giờ
+    B. 4 giờ
+    C. 6 giờ
+    D. 12 giờ
+}
+
+Q18 {
+    Tuổi mẹ hiện gấp 4 lần tuổi con. Sau 12 năm, tuổi mẹ gấp 2 lần tuổi con. Tuổi mẹ hiện nay là bao nhiêu?
+    *A. 24
+    B. 32
+    C. 36
+    D. 48
+}
+
+Q19 {
+    Một cửa hàng giảm giá 10% cho sản phẩm giá 200.000 đồng. Giá sau giảm là bao nhiêu?
+    A. 160.000 đồng
+    B. 170.000 đồng
+    *C. 180.000 đồng
+    D. 190.000 đồng
+}
+
+Q20 {
+    Một người mua 3kg cam và 2kg táo với giá lần lượt 20.000 đồng/kg và 30.000 đồng/kg. Tổng tiền là bao nhiêu?
+    *A. 120.000 đồng
+    B. 100.000 đồng
+    C. 130.000 đồng
+    D. 140.000 đồng
+}

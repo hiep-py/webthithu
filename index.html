@@ -9,14 +9,20 @@
   <body>
     <div class="container">
       <header>
-        <h1>Hệ Thống Thi Thử Online</h1>
+        <h1>Website Thi Thử</h1>
       </header>
 
       <main>
         <div class="welcome-box">
-          <h2>Chọn môn thi và mã đề</h2>
+          <h2>Chọn lớp và môn thi</h2>
 
-          <!-- Thêm thanh tìm kiếm -->
+          <div class="search-actions">
+            <a href="pages/search.html" class="search-page-btn">
+              <span class="search-icon">🔍</span>
+              Tìm kiếm nâng cao
+            </a>
+          </div>
+
           <div class="search-box">
             <input
               type="text"
@@ -24,19 +30,29 @@
               placeholder="Tìm kiếm đề thi..."
               onkeyup="searchExams()"
             />
-            <div id="searchResults" class="search-results"></div>
           </div>
 
+          <!-- Kết quả tìm kiếm hiển thị lớn hơn -->
+          <div id="searchResults" class="search-results-panel"></div>
+
           <div class="exam-selection">
-            <select id="subject" onchange="loadExamCodes()">
-              <option value="">-- Chọn môn thi --</option>
-              <option value="toan">Toán học</option>
-              <option value="ly">Vật lý</option>
-              <option value="hoa">Hóa học</option>
+            <select id="grade" onchange="loadSubjects()">
+              <option value="">-- Chọn lớp --</option>
+              <option value="6">Lớp 6</option>
+              <option value="7">Lớp 7</option>
+              <option value="8">Lớp 8</option>
+              <option value="9">Lớp 9</option>
+              <option value="10">Lớp 10</option>
+              <option value="11">Lớp 11</option>
+              <option value="12">Lớp 12</option>
+            </select>
+
+            <select id="subject" onchange="loadExamCodes()" disabled>
+              <option value="">-- Chọn môn học --</option>
             </select>
 
             <select id="examCode" disabled>
-              <option value="">-- Chọn mã đề --</option>
+              <option value="">-- Chọn đề thi --</option>
             </select>
 
             <button onclick="startExam()" id="startBtn" disabled>
