@@ -1,0 +1,42 @@
+/ketqua.html -->
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kết Quả Bài Thi</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/result.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="result-box">
+        <h2>Kết Quả Bài Thi</h2>
+        <div class="score">
+          <h3 id="exam-title">Loading...</h3>
+          <div class="score-circle">
+            <div class="score-number" id="score">-</div>
+            <div class="score-label">điểm</div>
+          </div>
+        </div>
+        <div class="result-details">
+          <p>
+            Số câu đúng: <span id="correct-answers">-</span>/<span
+              id="total-questions"
+              >-</span
+            >
+          </p>
+          <p>Thời gian làm bài: <span id="time-taken">-</span> phút</p>
+        </div>
+        <div class="actions">
+          <button onclick="reviewAnswers()">Xem lại bài làm</button>
+          <button onclick="location.href='../index.html'">
+            Quay về trang chủ
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/quiz-data.js"></script>
+    <script src="../js/result.js"></script>
+  </body>
+</html>

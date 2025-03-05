@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hệ Thống Thi Thử Online</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Hệ Thống Thi Thử Online</h1>
+      </header>
+
+      <main>
+        <div class="welcome-box">
+          <h2>Chọn môn thi và mã đề</h2>
+
+          <!-- Thêm thanh tìm kiếm -->
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Tìm kiếm đề thi..."
+              onkeyup="searchExams()"
+            />
+            <div id="searchResults" class="search-results"></div>
+          </div>
+
+          <div class="exam-selection">
+            <select id="subject" onchange="loadExamCodes()">
+              <option value="">-- Chọn môn thi --</option>
+              <option value="toan">Toán học</option>
+              <option value="ly">Vật lý</option>
+              <option value="hoa">Hóa học</option>
+            </select>
+
+            <select id="examCode" disabled>
+              <option value="">-- Chọn mã đề --</option>
+            </select>
+
+            <button onclick="startExam()" id="startBtn" disabled>
+              Bắt đầu thi
+            </button>
+          </div>
+        </div>
+
+        <div class="exam-info" id="examInfo" style="display: none">
+          <h3>Thông tin đề thi</h3>
+          <p>Tên đề: <span id="examTitle"></span></p>
+          <p>Thời gian: <span id="examTime"></span> phút</p>
+          <p>Số câu hỏi: <span id="questionCount"></span></p>
+        </div>
+      </main>
+    </div>
+    <script src="js/quiz-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

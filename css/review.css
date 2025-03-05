@@ -1,0 +1,43 @@
+.review-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-review {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.answer-status {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.correct {
+  background: #d4edda;
+  color: #155724;
+}
+
+.incorrect {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.option-review {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.option-selected {
+  background: #cce5ff;
+}
+
+.option-correct {
+  background: #d4edda;
+}

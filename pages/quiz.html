@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Làm bài thi</title>
+    <link rel="stylesheet" href="../css/quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz-header">
+        <h2 id="quiz-title">Đang tải...</h2>
+        <div class="timer">
+          Thời gian còn lại: <span id="timer">00:00</span>
+        </div>
+      </div>
+
+      <div class="quiz-content">
+        <div id="question-container">
+          <!-- Câu hỏi sẽ được thêm vào đây bằng JavaScript -->
+        </div>
+
+        <div class="quiz-navigation">
+          <button id="prev-btn">Câu trước</button>
+          <span id="question-number">Câu 1/20</span>
+          <button id="next-btn">Câu sau</button>
+        </div>
+
+        <button id="submit-btn" class="submit-btn">Nộp bài</button>
+      </div>
+    </div>
+    <script src="../js/quiz-data.js"></script>
+    <script src="../js/quiz.js"></script>
+  </body>
+</html>
